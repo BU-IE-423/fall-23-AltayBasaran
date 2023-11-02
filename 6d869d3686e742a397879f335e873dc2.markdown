@@ -1,0 +1,549 @@
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image1.png){width="3.0590277777777777in"
+height="2.9875in"}
+
+**IE423 Quality Engineering**
+
+**PROJECT PART I**
+
+**ANALYSIS REPORT**
+
+**Students Name / ID Numbers:**
+
+Ali Kaan Yakıcı / 2019402195
+
+Altay Başaran Duymaz / 2019402012
+
+Yusuf Kavçakar / 2019402069
+
+**[Introduction:]{.underline}**
+
+The project is made for the analysis of the data of six stocks which are
+PGSUS, THYAO, BANVT, MGROS, ASELS, FROTO from 2015 to 2017 for two
+years. The main aim of the project is to detect outliers in the daily
+percent change of stock prices and understand the causes of the
+emergency of outliers. Furthermore, Google Trends is used for the
+detection of accuracy of outliers by comparing the line plot of monthly
+data of stock price and the line plot of the research about the stock in
+Google. Another usage of Google Trends is comparing the research about
+events which affect stock price like coup and election with stock price
+line plot. Other than that; KAP, Investing.com and newsletters are used
+for the news of the economy, the sector of stocks and the stock, and
+TradingView is used for obtaining an insight of BIST100 and stocks
+trends.
+
+**[Data Retrieval & Manipulation:]{.underline}**
+
+At first, the data of six stocks is given at 15-minute intervals, then
+the data is prepared for daily analysis. The last data of each day is
+taken as the close price of each day. After that, the daily price change
+of close is calculated by the difference between the close prices of two
+consecutive days. Then, the data of each stock is separated for months
+and boxplots are made for each month to detect outliers. To detect
+outliers, boxplots of the daily data of stocks for each month are made
+based on Interquartile Range (IQR). In other words, 24 boxplots are made
+for each stock, and it is tried to find outliers for each month.
+
+**[Interpretation:]{.underline}**
+
+A)  **Political & Economic Reasons :**
+
+-   **[2015-06-08]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2015-06-08     6,2186      6           2015        ASELS        -8,36133
+
+  2015-06-08     8,42        6           2015        THYAO        -6,44444
+
+  2015-06-08     23,5        6           2015        PGSUS        -6,18762
+
+  2015-06-08     2,3         6           2015        BANVT        -10,8527
+
+  2015-06-08     20          6           2015        MGROS        -4,7619
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+In the election dated June 7, 2015, there was concern about stability in
+the country as no party could obtain the majority to establish power on
+its own. This caused a decline in BIST.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image2.png){width="4.15in"
+height="1.3729166666666666in"}
+
+*Google Trends chart for "bist" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image3.png){width="4.290972222222222in"
+height="1.3666666666666667in"}
+
+*Google Trends chart for "seçim(election)" search*
+
+-   **[2016-07-18]{.underline}**
+
+  -------------- ----------- ----------- ---------- ------------- ------------
+                 **Close**   **Month**   **Year**   **Symbol**    **Change**
+
+  2016-07-18     8,9756      7           2016       ASELS         -8,74375
+
+  2016-07-18     12,55       7           2016       PGSUS         -10,1646
+
+  2016-07-18     5,21        7           2016       THYAO         -12,5839
+
+  2016-07-18     2,17        7           2016       BANVT         9,58333
+
+  2016-07-18     12,9        7           2016       MGROS         9,5048
+  -------------- ----------- ----------- ---------- ------------- ------------
+
+There was a military coup attempt in Turkey between 15-16 July 2016 by a
+group of soldiers within the Turkish Armed Forces. That\'s why a big
+drop was observed in BIST on July 18, the first business day after these
+dates.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image4.png){width="4.446527777777778in"
+height="1.4583333333333333in"}
+
+*Google Trends chart for "darbe(coup)" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image5.png){width="4.491666666666666in"
+height="1.5361111111111112in"}
+
+*Google Trends chart for "BİST" search*
+
+-   **[2015-10-28]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2015-10-28     6,9589      10          2015        ASELS        -4,40809
+
+  2015-10-28     8,3         10          2015        THYAO        -3,48837
+
+  2015-10-28     18,3        10          2015        PGSUS        -5,42636
+
+  2015-10-28     2,21        10          2015        BANVT        -5,55556
+
+  2015-10-28     17,45       10          2015        MGROS        -4,64481
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+On October 28, 2015, a trustee was appointed by the state to Koza
+Holding, one of the country\'s leading holding companies, and as a
+result, protests were held. As a result of the tension between the
+police and protesters during the protests, public unrest occurred, and a
+decline was observed in investment instruments such as BIST.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image6.png){width="4.146424978127734in"
+height="1.3005249343832022in"}
+
+*Google Trends chart for "BİST" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image7.png){width="4.195138888888889in"
+height="1.3416666666666666in"}
+
+> *Google Trends chart for*
+>
+> *"kayyum(trustee)" search*
+
+-   **[2016-07-21]{.underline}**
+
+  --------------- ----------- ----------- ---------- ------------ -------------
+                  **Close**   **Month**   **Year**   **Symbol**   **Change**
+
+  2016-07-21      8,9064      7           2016       ASELS        -4,04758
+
+  2016-07-21      11,1        7           2016       PGSUS        -6,09137
+
+  2016-07-21      2           7           2016       BANVT        -6,10329
+
+  2016-07-21      15,11       7           2016       MGROS        -4,96855
+  --------------- ----------- ----------- ---------- ------------ -------------
+
+**[\
+]{.underline}** After the coup attempt, a state of emergency was
+declared in the country for 3 months, and this caused a decline in
+investment instruments such as BIST.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image5.png){width="4.491666666666666in"
+height="1.5361111111111112in"}
+
+*Google Trends chart for "BİST" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image8.png){width="4.508333333333334in"
+height="1.35625in"}
+
+> *Google Trends chart for "OHAL(state of emergency)" search*
+
+-   **[2015-11-02]{.underline}**
+
+  ------------- ------------ ----------- ----------- ------------ -------------
+                **Close**    **Month**   **Year**    **Symbol**   **Change**
+
+  2015-11-02    7,3044       11          2015        ASELS        6,093044
+
+  2015-11-02    9,2          11          2015        THYAO        6,852497
+
+  2015-11-02    19,55        11          2015        PGSUS        4,545455
+
+  2015-11-02    18,9         11          2015        MGROS        9,883721
+  ------------- ------------ ----------- ----------- ------------ -------------
+
+Since a government could not be formed in the election on June 7, early
+elections were held on November 1, 2015. As a result of this election,
+the government was formed and the atmosphere of uncertainty in the
+country was eliminated. As a result, a significant increase was seen in
+BIST.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image9.png){width="4.3125in"
+height="1.53125in"}
+
+*Google Trends chart for "istikrar (stability)" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image10.png){width="4.354166666666667in"
+height="1.6875in"}
+
+*Google Trends chart for "BIST" search*
+
+-   **[2015-01-20]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2015-01-21     24,6318     1           2015        FROTO        3,408929
+
+  2015-01-20     32,4        1           2015        PGSUS        4,854369
+
+  2015-01-20     9,65        1           2015        THYAO        7,222222
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+The Central Bank of Turkey\'s decision to reduce the policy interest
+rate by 50 basis points on January 20, 2015 was positively received by
+the markets, and the BIST 100 index showed an increase. As a result of
+this decision, an increase was observed in the shares of FROTO, PGSUS,
+and
+THYAO.![](vertopal_6d869d3686e742a397879f335e873dc2/media/image11.png){width="4.822916666666667in"
+height="1.8229166666666667in"}
+
+Google Trends chart for "Faiz" search
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image12.png){width="4.890625546806649in"
+height="1.8229166666666667in"}
+
+Google Trends chart for "Borsa" search
+
+-   **[2015-07-23]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2015-07-23     26,0069     7           2015        FROTO        -3,92474
+
+  2015-07-23     20,35       7           2015        MGROS        -4,23529
+
+  2015-07-23     2,35        7           2015        BANVT        -5,62249
+
+  2015-07-23     23,6        7           2015        PGSUS        -5,78842
+
+  2015-07-23     8,82        7           2015        THYAO        -4,75162
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+The uncertainty created by politicians\' coalition statements and
+terrorist attacks, especially in Kilis and Ceylanpınar, led to a decline
+in the stock market index. In parallel, a decrease was observed in the
+shares of PGSUS, THYAO, BANVT, MGROS, ASELS, and
+FROTO.![](vertopal_6d869d3686e742a397879f335e873dc2/media/image13.png){width="5.161458880139983in"
+height="1.96875in"}
+
+*Google Trends chart for "Kilis, Ceylanpınar, Koalisyon" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image14.png){width="5.223958880139983in"
+height="1.9479166666666667in"}
+
+*Google Trends chart for "Borsa" search*
+
+-   **[2016-12-01]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2016-12-01     23,5737     12          2016        FROTO        -3,7427
+
+  2016-12-01     16,61       12          2016        MGROS        -4,0439
+
+  2016-12-01     4,63        12          2016        THYAO        -3,7422
+
+  2016-12-01     12,12       12          2016        PGSUS        -3,04
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+The tensions with the EU and Russia, along with constitutional debates,
+have resulted in an uncertain environment, causing a decline in the
+stock market index.. In parallel, a decrease was observed in the shares
+of PGSUS, THYAO, BANVT, MGROS, ASELS, and
+FROTO.![](vertopal_6d869d3686e742a397879f335e873dc2/media/image15.png){width="3.5989588801399823in"
+height="2.1458333333333335in"}
+
+*"TSKB daily analysis of BIST100 index "*
+
+B)  **Sectoral Reasons :**
+
+-   **[2015-11-24]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2015-11-24     7,92        11          2015        THYAO        -7,15123
+
+  2015-11-24     18,25       11          2015        PGSUS        -5,44041
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+On November 24, 2015, the Suhoy Su-24 type aircraft belonging to the
+Russian Air Force committed a border violation and was shot down by the
+Turkish Air Force. As a result, Russia-Türkiye relations have almost
+come to a complete end. Considering that Russian citizens are one of the
+biggest sources of tourism for Turkey, it is normal that the share value
+of companies operating in the field of aviation will decrease as a
+result of this incident.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image16.png){width="3.9305555555555554in"
+height="1.2833333333333334in"}
+
+*Google Trends chart for "uçak(aircraft)" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image17.png){width="2.651388888888889in"
+height="1.89375in"}![](vertopal_6d869d3686e742a397879f335e873dc2/media/image18.png){width="2.716666666666667in"
+height="1.9395833333333334in"}
+
+-   **[2016-03-22]{.underline}**
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2016-03-22     7,58        3           2016        THYAO        -4,77387
+
+  2016-03-22     16,91       3           2016        PGSUS        -3,15006
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+On 22 March 2016, between 08:00 and 09:11 local time, a series of armed
+attacks and suicide bomb attacks took place at the Maelbeek metro
+station and Brussels Airport in Brussels, Belgium. The fact that such an
+attack took place in Europe and one of these attacks was at the airport
+caused a decline in the shares of two airline companies serving in
+Europe.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image19.png){width="3.979861111111111in"
+height="1.2833333333333334in"}
+
+*Google Trends chart for "havalimanı(airport)" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image20.png){width="3.05in"
+height="2.104861111111111in"}
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image21.png){width="3.079861111111111in"
+height="2.2in"}
+
+-   **[2016-04-20]{.underline}**
+
+  --------------- ----------- ----------- ----------- ------------ ------------
+                  **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2016-04-20      6,99        4           2016        THYAO        -6,8
+
+  2016-04-20      16,7        4           2016        PGSUS        -6,54729
+  --------------- ----------- ----------- ----------- ------------ ------------
+
+Shares of companies serving in the transportation sector decreased after
+the rumor spread that the minister could be dismissed because the son of
+the then minister of transportation was seen in a casino abroad.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image22.png){width="4.366666666666666in"
+height="1.3451388888888889in"}
+
+*Google Trends chart for "kumar (gamble)" search*
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image23.png){width="4.566666666666666in"
+height="1.554861111111111in"}
+
+*Google Trends chart for "Binali Yıldırım (minister of transportation)"
+search*
+
+-   **[2016-06-24]{.underline}**
+
+  --------------- ----------- ----------- ----------- ------------ ------------
+                  **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2016-04-20      26,2626     6           2016        FROTO        -7,6386
+  --------------- ----------- ----------- ----------- ------------ ------------
+
+Ford Otosan, which exports nearly 20% of its products to the United
+Kingdom, experienced a significant drop in its shares due to the
+possibility of new regulations and agreements being required to continue
+sales in this country following the Brexit event, which was brought up
+with the UK\'s separation from the European Union.
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image24.png){width="5.276042213473316in"
+height="2.3854166666666665in"}
+
+*Google Trends chart for"Brexit"*
+
+> ![](vertopal_6d869d3686e742a397879f335e873dc2/media/image25.png){width="5.249305555555556in"
+> height="2.3229166666666665in"}
+
+*Google Trends chart for"FROTO"*
+
+C)  **Company-Specific Reasons :**
+
+The aim of the part is to understand the effects of announcements of
+companies on stock price, and the relationship between outliers and
+important announcements.
+
+**[KAP Announcements about New Deals:]{.underline}**
+
+The revenue and profit of companies have significant effects on stock
+prices and stock prices increase when a new deal increases the revenue
+is made. Other than that, there are many announcement types which
+positively affect prices like the capital increase, the acquisition of
+another company and so on. Another type of announcements positively
+affects price is the purchasing of stocks from the boss or shareholder
+of the company. Lastly, the most important thing related to KAP is the
+quarterly balance sheet announcement. If it is positive, the stock price
+will be positive. The table of outliers related to these positive
+announcements are below:
+
+  ---------------- ----------- ----------- ---------- ------------ ------------
+                   **Close**   **Month**   **Year**   **Symbol**   **Change**
+
+  **2015-06-24**   7.181       6           2015       ASELS        5.054495
+
+  **2015-09-15**   6.8355      9           2015       ASELS        4.922638
+
+  **2016-03-24**   8.8246      3           2016       ASELS        3.057411
+
+  **2016-04-04**   9.1995      Z4          2016       ASELS        1.969673
+
+  **2016-04-12**   9.7966      4           2016       ASELS        3.329853
+
+  **2016-11-09**   9.8003      11          2016       ASELS        3.991893
+
+  **2016-12-30**   12.598      12          2016       ASELS        5.127884
+
+  **2015-11-11**   20.75       11          2015       PGSUS        6.138107
+
+  **2016-10-17**   12.8        10          2016       PGSUS        5.176664
+
+  **2016-11-07**   5.3         11          2016       THYAO        4.330709
+
+  **2015-04-29**   3.05        4           2015       BANVT        3.040541
+
+  **2015-05-04**   2.85        5           2015       BANVT        -3.38983
+
+  **2015-05-06**   2.72        5           2015       BANVT        -3.88693
+
+  **2016-03-24**   2.62        3           2016       BANVT        19.6347
+
+  **2016-08-16**   2.91        8           2016       BANVT        15.93625
+
+  **2015-04-21**   22.4        4           2015       MGROS        4.186047
+
+  **2015-01-27**   25.4437     1           2015       FROTO        2.014739
+
+  **2015-03-11**   25.7145     3           2015       FROTO        3.260717
+  ---------------- ----------- ----------- ---------- ------------ ------------
+
+There are also negative effects of KAP announcements like selling stocks
+from shareholders or a bad situation related to deals, investments of
+companies or negative quarterly balance sheet. The table of outliers
+related to these positive announcements is below:
+
+  ---------------- ----------- ----------- ----------- ------------ -------------
+                   **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  **2016-03-08**   8.4643      3           2016        ASELS        -5.29878
+
+  **2016-09-26**   9.2558      9           2016        ASELS        -3.57035
+
+  **2015-08-13**   21.6        8           2015        PGSUS        -7.09677
+
+  **2016-03-04**   17.23       3           2016        PGSUS        -3.47339
+
+  **2015-04-30**   2.95        4           2015        BANVT        -3.27869
+
+  **2016-05-03**   2.34        5           2016        BANVT        -5.64516
+
+  **2016-06-24**   2.2         6           2016        BANVT        -3.93013
+
+  **2015-04-30**   21.4        4           2015        MGROS        -4.67706
+
+  **2016-10-04**   17.76       10          2016        MGROS        -3.84407
+
+  **2015-01-07**   24.6704     1           2015        FROTO        -2.59595
+  ---------------- ----------- ----------- ----------- ------------ -------------
+
+However, there are no correlation between these increases or decreases
+in stock prices and Google Trends because in stock industry these are
+followed by few people and it does not cause the significant increase in
+the research in Google Trends.
+
+D)  **Other Reasons :**
+
+Other 3 main reasons are significant for the stock price but there are
+many movements of stock prices that can not be explained by these
+reasons. It is related to the stochastic nature of stock prices. In
+other words, the previous 3 reasons are related to fundamental analysis
+of stocks but there is another important thing is technical analysis of
+stocks.
+
+The movements due to technical analysis are not explained with specific
+reasons therefore there is no pattern in Google Trends or news about
+stocks. These are understood by analyzing stock prices with indicators
+and formations. Furthermore, some outliers are just response increases
+against low prices and movements against low volatility.
+
+As examples of these situations, BANVT and ASELS may be considered
+because there are big differences between the change in stock plot and
+Google Trends plot at the same time. Although there are big changes in
+stock, there are no significant changes in Google Trends.
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2015-01-08     3.12        1           2015        BANVT        5.050505
+
+  2015-01-26     3.19        1           2015        BANVT        4.248366
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image26.png){width="3.463542213473316in"
+height="1.2599923447069117in"}![](vertopal_6d869d3686e742a397879f335e873dc2/media/image27.png){width="2.9114588801399823in"
+height="2.0653937007874017in"}
+
+  -------------- ----------- ----------- ----------- ------------ ------------
+                 **Close**   **Month**   **Year**    **Symbol**   **Change**
+
+  2016-04-13     10.0682     4           2016        ASELS        2.77239
+
+  2016-04-14     9.92        4           2016        ASELS        -1.47196
+  -------------- ----------- ----------- ----------- ------------ ------------
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image28.png){width="2.805757874015748in"
+height="1.9947922134733158in"}
+
+![](vertopal_6d869d3686e742a397879f335e873dc2/media/image29.png){width="3.3678947944007in"
+height="1.1468744531933508in"}
+
+**[Conclusion:]{.underline}**
+
+The stock prices depend on many things like political-economic reasons,
+sectoral developments of companies, company related news and the
+stochastic nature of stock market. To detect significant daily change of
+stock prices and analyze stocks, many methods can be used like boxplots.
+Boxplots represent outliers which means extreme events, and these
+outliers can be used for understanding what is going on at the time of
+emergence of outliers. Therefore, outliers are used in the project and
+significant results are made with some significant problems.
+
+When detecting outliers, interquartile range is used and 174 outliers
+are captured for 6 stocks and 24 months. The most of outliers represent
+important events about the politics, economics, sectoral events and
+companies\' news. Furthermore, dates of these outliers represent
+significant changes in Google Trends and the correlation between Google
+Trends plot line and the change of stock price plot line can be seen
+exactly. However, some part of outliers does not represent the same
+thing and can not also seen in Google Trends. These can be explained
+with the stochastic nature of the stock market and the structure of
+actors in the stock market.
