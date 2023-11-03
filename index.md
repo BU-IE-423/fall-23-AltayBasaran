@@ -9,3 +9,6 @@
   
 ## You can reach the code from the link below. (ipynb)
 * [Code (ipynb) ](https://bu-ie-423.github.io/fall-23-AltayBasaran/423_proje.ipynb):
+
+## You can reach the code from the link below. (HTML)
+* [Code (HTML) ](https://bu-ie-423.github.io/fall-23-AltayBasaran/423_proje.html):
