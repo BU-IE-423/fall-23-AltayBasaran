@@ -16,7 +16,7 @@
 
 # Project Part II
 ## You can reach the Report&Code from the link below. (ipynb)
-* [Code (ipynb) ](https://bu-ie-423.github.io/fall-23-AltayBasaran/part2.ipynb)
+* [Code (ipynb) ](https://bu-ie-423.github.io/fall-23-AltayBasaran/part2son.ipynb)
 
 ## You can reach the Report&Code from the link below. (HTML)
-* [Code (HTML) ](https://bu-ie-423.github.io/fall-23-AltayBasaran/Part2.html)
+* [Code (HTML) ](https://bu-ie-423.github.io/fall-23-AltayBasaran/Part2son.html)
